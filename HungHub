@@ -860,7 +860,7 @@ a.Looped = false
 a.SoundId = "rbxassetid://" .. Music
 a.Playing = value
 end)
-section14:addToggle("SARAN", nil, function(value)
+section14:addToggle("Hung Hub", nil, function(value)
 _G.MUSIC = value
 Music = 7244372791
 a = Instance.new("Sound", game:GetService("Workspace"))
@@ -890,7 +890,7 @@ a.Looped = false
 a.SoundId = "rbxassetid://" .. Music
 a.Playing = value
 end)
-section14:addToggle("SARAN v2", false, function(value)
+section14:addToggle("Hung Hub v2", false, function(value)
 _G.MUSIC = value
 Music = 5970404076
 a = Instance.new("Sound", game:GetService("Workspace"))

@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-    Name = "Blox Fruits",
+    Name = "Hung Hub",
     LoadingTitle = "Hung Hub",
     LoadingSubtitle = "by Hung",
     ConfigurationSaving = {
@@ -29,11 +29,11 @@ local Window = Rayfield:CreateWindow({
  local PlayerTab = Window:CreateTab("Misc", 4483362458)
 
  local Slider = PlayerTab:CreateSlider({
-    Name = "WalkSpeed",
-    Range = {1, 10},
+    Name = "Walk Speed",
+    Range = {1, 100},
     Increment = 1,
     Suffix = "Speed",
-    CurrentValue = 10,
+    CurrentValue = 1,
     Flag = "Slider1",
     Callback = function(Value)
      game.Players.LocalPlayer.Character:SetAttribute("SpeedMultiplier", Value)
@@ -42,10 +42,10 @@ local Window = Rayfield:CreateWindow({
 
  local Slider = PlayerTab:CreateSlider({
     Name = "Dash length",
-    Range = {10, 1000},
+    Range = {1, 1000},
     Increment = 1,
     Suffix = "Length",
-    CurrentValue = 10,
+    CurrentValue = 1,
     Flag = "Slider2",
     Callback = function(Value)
      game.Players.LocalPlayer.Character:SetAttribute("DashLength", Value)
@@ -54,10 +54,10 @@ local Window = Rayfield:CreateWindow({
 
  local Slider = PlayerTab:CreateSlider({
     Name = "Jump Height",
-    Range = {10, 500},
+    Range = {1, 500},
     Increment = 1,
     Suffix = "Height",
-    CurrentValue = 10,
+    CurrentValue = 1,
     Flag = "Slider3",
     Callback = function(Value)
      game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value

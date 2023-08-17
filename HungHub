@@ -32,10 +32,13 @@ local Window = Rayfield:CreateWindow({
  local Button = MainTab:CreateButton({
     Name = "Open Inventory",
     Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-        game.Players.localPlayer.PlayerGui.Main.Inventory.Visible = true
-    end,
- })
+        local args = {
+            [1] = "getInventoryWeapons"
+            }
+            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+            game.Players.localPlayer.PlayerGui.Main.Inventory.Visible = true
+            end,
+        })
 
  local PlayerTab = Window:CreateTab("Misc", 4483362458)
 

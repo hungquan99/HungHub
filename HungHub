@@ -1908,7 +1908,7 @@ if game.PlaceId == 2753915549 then
         localplayer=game:GetService("Players").LocalPlayer
         game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart")
         local torso = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
-        local speedSET=25
+        local speedSET=1
         local keys={a=false,d=false,w=false,s=false}
         local e1
         local e2

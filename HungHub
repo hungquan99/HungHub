@@ -1845,7 +1845,7 @@ if game.PlaceId == 2753915549 then
                     NumberSequenceKeypoint.new(1, 4); 
                 }
                 inf.Size = NumberSequence.new(numberKeypoints2)
-                inf.RotSpeed = NumberRange.new(30, 30)
+                inf.RotSpeed = NumberRange.new(120, 120)
                 inf.Rotation = NumberRange.new(0, 0)
                 inf.Speed = NumberRange.new(30, 30)
                 inf.SpreadAngle = Vector2.new(0,0,0,0)
@@ -2046,13 +2046,13 @@ if game.PlaceId == 2753915549 then
     function TP1(Pos)
     Distance = (Pos.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
     if Distance < 1200 then
-        Speed = 50
+        Speed = 120
     elseif Distance < 1000 then
-        Speed = 50
+        Speed = 120
     elseif Distance < 2600 then
-        Speed = 50
+        Speed = 120
     elseif Distance >= 1000 then
-        Speed = 50
+        Speed = 140
     end
     game:GetService("TweenService"):Create(
         game.Players.LocalPlayer.Character.HumanoidRootPart,
@@ -2064,9 +2064,9 @@ end
     function TP(Pos)
         Distance = (Pos.Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
         if Distance < 1000 then
-            Speed = 50
+            Speed = 120
         elseif Distance >= 1000 then
-            Speed = 50
+            Speed = 140
         end
         game:GetService("TweenService"):Create(
             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,

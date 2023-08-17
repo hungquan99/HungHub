@@ -1,3 +1,8 @@
+local placeId = game.PlaceId
+
+if placeId == 2753915549 then 
+end
+
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
@@ -26,10 +31,10 @@ local Window = Rayfield:CreateWindow({
     }
  })
 
- local MainTab = Window:CreateTab("Main", 4483362458)
- local MainSection = MainTab:CreateSection("Main")
+ local OtherTab = Window:CreateTab("Other", 4483362458)
+ local OtherSection = OtherTab:CreateSection("Other")
 
- local Button = MainTab:CreateButton({
+ local Button = OtherTab:CreateButton({
     Name = "Open Inventory",
     Callback = function()
         local args = {
@@ -40,40 +45,68 @@ local Window = Rayfield:CreateWindow({
             end,
         })
 
- local PlayerTab = Window:CreateTab("Misc", 4483362458)
+        local Button = OtherTab:CreateButton({
+            Name = "Open Color Haki",
+            Callback = function()
+                local args = {
+                    [1] = "getColorHaki"
+                    }
+                    game.Players.localPlayer.PlayerGui.Main.Colors.Visible = true
+                    end,
+                })   
 
- local Slider = PlayerTab:CreateSlider({
-    Name = "Walk Speed",
-    Range = {1, 100},
-    Increment = 1,
-    Suffix = "Speed",
-    CurrentValue = 1,
-    Flag = "Slider1",
-    Callback = function(Value)
-     game.Players.LocalPlayer.Character:SetAttribute("SpeedMultiplier", Value)
+                local Button = OtherTab:CreateButton({
+                    Name = "Open Title Name",
+                    Callback = function()
+                        local args = {
+                            [1] = "getTitles"
+                            }
+                            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                            game.Players.localPlayer.PlayerGui.Main.Titles.Visible = true
+                            end,
+                        })
+
+local OtherSection = OtherTab:CreateSection("Team")
+
+local Button = OtherTab:CreateButton({
+     Name = "Join Pirate Team",
+     Callback = function()
+        local args = {
+			[1] = "SetTeam",
+			[2] = "Pirates"
+		}
+		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args)) 
     end,
- })
+})
 
- local Slider = PlayerTab:CreateSlider({
-    Name = "Dash length",
-    Range = {1, 1000},
-    Increment = 1,
-    Suffix = "Length",
-    CurrentValue = 1,
-    Flag = "Slider2",
-    Callback = function(Value)
-     game.Players.LocalPlayer.Character:SetAttribute("DashLength", Value)
-    end,
- })
+local Button = OtherTab:CreateButton({
+    Name = "Join Marine Team",
+    Callback = function()
+        local args = {
+			[1] = "SetTeam",
+			[2] = "Marines"
+		}
+		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+   end,
+})
 
- local Slider = PlayerTab:CreateSlider({
-    Name = "Jump Height",
-    Range = {1, 500},
-    Increment = 1,
-    Suffix = "Height",
-    CurrentValue = 1,
-    Flag = "Slider3",
+ local RaidTab = Window:CreateTab("Raid", 4483362458)
+ local RaidSection = RaidTab:CreateSection("Raid")
+
+ local RaidToggle = RaidTab:CreateToggle({
+    Name = "Kill Aura",
+    CurrentValue = false,
+    Flag = "Kill Aura", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
     Callback = function(Value)
-     game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+        for i,v in pairs(game:GetService("Workspace").Enemies:GetDescendants()) do
+            if v.Name == "HumanoidRootPart" then
+            v.Parent.Humanoid.Health = 0
+            v.Parent.HumanoidRootPart.Size = Vector3.new(20,20,20)
+            v.Parent.HumanoidRootPart.CanCollide = false
+            v.Parent.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,20,0)
+            v.Parent.HumanoidRootPart.Size = Vector3.new(2,2,1)
+            sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
+            end
+            end
     end,
  })

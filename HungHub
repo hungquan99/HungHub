@@ -1,4 +1,4 @@
-if game.CoreGui:FindFirstChild("SOMEXHUBMODILE") then f
+if game.CoreGui:FindFirstChild("SOMEXHUBMODILE") then
     game.CoreGui:FindFirstChild("SOMEXHUBMODILE"):Destroy()
 end
 

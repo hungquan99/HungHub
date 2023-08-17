@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-    Name = "Hung Hub",
+    Name = "Hung Hub | Blox Fruits",
     LoadingTitle = "Hung Hub",
     LoadingSubtitle = "by hungquan99",
     ConfigurationSaving = {
@@ -26,9 +26,247 @@ local Window = Rayfield:CreateWindow({
     }
  })
 
+ local MainTab = Window:CreateTab("Main", 4483362458)
+ local MainSection = MainTab:CreateSection("Auto Mode")
+
+ local MainToggle = MainTab:CreateToggle({
+    Name = "Auto Buy Color Haki",
+    CurrentValue = false,
+    Flag = "Auto Buy Color Haki", 
+    Callback = function(Value)
+        _G.buy = value
+
+        while _G.buy do
+            wait()
+        
+            local A_1 = "ColorsDealer"
+            local A_2 = "1"
+            local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+            Event:InvokeServer(A_1, A_2)
+        
+            local A_1 = "ColorsDealer"
+            local A_2 = "2"
+            local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+            Event:InvokeServer(A_1, A_2)
+        
+            local A_1 = "ColorsDealer"
+            local A_2 = "3"
+            local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+            Event:InvokeServer(A_1, A_2)
+        
+            local A_1 = "ColorsDealer"
+            local A_2 = "4"
+            local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+            Event:InvokeServer(A_1, A_2)
+        
+            local A_1 = "ColorsDealer"
+            local A_2 = "5"
+            local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+            Event:InvokeServer(A_1, A_2)
+        
+            local A_1 = "ColorsDealer"
+            local A_2 = "6"
+            local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+            Event:InvokeServer(A_1, A_2)
+        
+            local A_1 = "ColorsDealer"
+            local A_2 = "7"
+            local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+            Event:InvokeServer(A_1, A_2)
+        
+            local A_1 = "ColorsDealer"
+            local A_2 = "8"
+            local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+            Event:InvokeServer(A_1, A_2)
+        
+            local A_1 = "ColorsDealer"
+            local A_2 = "9"
+            local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+            Event:InvokeServer(A_1, A_2)
+        
+            local A_1 = "ColorsDealer"
+            local A_2 = "10"
+            local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+            Event:InvokeServer(A_1, A_2)
+        
+            local A_1 = "ColorsDealer"
+            local A_2 = "11"
+            local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+            Event:InvokeServer(A_1, A_2)
+        
+            local A_1 = "ColorsDealer"
+            local A_2 = "12"
+            local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+            Event:InvokeServer(A_1, A_2)
+        
+            local A_1 = "ColorsDealer"
+            local A_2 = "13"
+            local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+            Event:InvokeServer(A_1, A_2)
+        
+        end
+    end,
+ })
+
+ local MainToggle = MainTab:CreateToggle({
+    Name = "Anti AFK",
+    CurrentValue = false,
+    Flag = "Anti AFK", 
+    Callback = function(Value)
+        local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+			vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+			wait(1)
+			vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+    end,
+})
+
+ local MainSection = MainTab:CreateSection("Buy Items")
+
+ local Button = MainTab:CreateButton({
+    Name = "Geppo ($10,000 Beli💸)",
+    Callback = function()
+        local args = {
+            [1] = "BuyHaki",
+            [2] = "Geppo"
+            }
+            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+            end,
+        })
+        
+        local Button = MainTab:CreateButton({
+            Name = "Buso Haki ($25,000 Beli💸)",
+            Callback = function()
+                local args = {
+                    [1] = "BuyHaki",
+                    [2] = "Buso"
+                    }
+                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                    end,
+                })
+
+                local Button = MainTab:CreateButton({
+                    Name = "Soru ($100,000 Beli💸)",
+                    Callback = function()
+                        local args = {
+                            [1] = "BuyHaki",
+                            [2] = "Soru"
+                            }
+                            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                            end,
+                        })
+
+                        local Button = MainTab:CreateButton({
+                            Name = "Observation Haki ($750,000 Beli💸)",
+                            Callback = function()
+                                local args = {
+                                    [1] = "KenTalk",
+                                    [2] = "Buy"
+                                    }
+                                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                                    end,
+                                })
+
+                                local Button = MainTab:CreateButton({
+                                    Name = "Dark Step ($150,000 Beli💸)",
+                                    Callback = function()
+                                        local args = {
+                                            [1] = "BuyBlackLeg"
+                                            }
+                                            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                                            end,
+                                        })
+
+                                        local Button = MainTab:CreateButton({
+                                            Name = "Electric ($500,000 Beli💸)",
+                                            Callback = function()
+                                                local args = {
+                                                    [1] = "BuyElectro"
+                                                    }
+                                                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                                                    end,
+                                                })
+
+                                                local Button = MainTab:CreateButton({
+                                                    Name = "Water Kung Fu ($750,000 Beli💸)",
+                                                    Callback = function()
+                                                        local args = {
+                                                            [1] = "BuyFishmanKarate"
+                                                            }
+                                                            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                                                            end,
+                                                        })
+
+                                                        local Button = MainTab:CreateButton({
+                                                            Name = "Dragon Breath ($1500 Fragments💸)",
+                                                            Callback = function()
+                                                                local args = {
+                                                                    [1] = "BlackbeardReward",
+                                                                    [2] = "DragonClaw",
+                                                                    [3] = "1"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                                                                    local args = {
+                                                                    [1] = "BlackbeardReward",
+                                                                    [2] = "DragonClaw",
+                                                                    [3] = "2"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                                                                    end,
+                                                                })
+                                                                
+                                                                local Button = MainTab:CreateButton({
+                                                                    Name = "Superhuman ($3,000,000 Beli💸)",
+                                                                    Callback = function()
+                                                                        local args = {
+                                                                            [1] = "BuySuperhuman"
+                                                                            }
+                                                                            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                                                                            end,
+                                                                        })
+
+                                                                        local Button = MainTab:CreateButton({
+                                                                            Name = "Death Step ($2,500,000 Beli And $5,000 Fragments💸)",
+                                                                            Callback = function()
+                                                                                local args = {
+                                                                                    [1] = "BuyDeathStep"
+                                                                                    }
+                                                                                    
+                                                                                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                                                                                    end,
+                                                                                })
+
+                                                                                local Button = MainTab:CreateButton({
+                                                                                    Name = "Sharkman Karate ($2,500,000 Beli And $5,000 Fragments💸)",
+                                                                                    Callback = function()
+                                                                                        local args = {
+                                                                                            [1] = "BuySharkmanKarate",
+                                                                                            [2] = true
+                                                                                            }
+                                                                                            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                                                                                            local args = {
+                                                                                            [1] = "BuySharkmanKarate"
+                                                                                            }
+                                                                                            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                                                                                            end,
+                                                                                        })
+        
+
  local OtherTab = Window:CreateTab("Other", 4483362458)
  local OtherSection = OtherTab:CreateSection("Other")
 
+ local Button = OtherTab:CreateButton({
+    Name = "Blox Fruit Dealer",
+    Callback = function()
+        local args = {
+            [1] = "GetFruits"
+            }
+            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+            game.Players.localPlayer.PlayerGui.Main.FruitShop.Visible = true
+            end,
+        })
+ 
  local Button = OtherTab:CreateButton({
     Name = "Open Inventory",
     Callback = function()
@@ -61,6 +299,73 @@ local Window = Rayfield:CreateWindow({
                             end,
                         })
 
+                        local Button = OtherTab:CreateButton({
+                            Name = "Server Hop",
+                            Callback = function()
+                                local PlaceID = game.PlaceId
+                                local AllIDs = {}
+                                local foundAnything = ""
+                                local actualHour = os.date("!*t").hour
+                                local Deleted = false
+                                function TPReturner()
+                                local Site;
+                                if foundAnything == "" then
+                                Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
+                                else
+                                Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
+                                end
+                                local ID = ""
+                                if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
+                                foundAnything = Site.nextPageCursor
+                                end
+                                local num = 0;
+                                for i,v in pairs(Site.data) do
+                                local Possible = true
+                                ID = tostring(v.id)
+                                if tonumber(v.maxPlayers) > tonumber(v.playing) then
+                                for _,Existing in pairs(AllIDs) do
+                                if num ~= 0 then
+                                if ID == tostring(Existing) then
+                                Possible = false
+                                end
+                                else
+                                if tonumber(actualHour) ~= tonumber(Existing) then
+                                local delFile = pcall(function()
+                                -- delfile("NotSameServers.json")
+                                AllIDs = {}
+                                table.insert(AllIDs, actualHour)
+                                end)
+                                end
+                                end
+                                num = num + 1
+                                end
+                                if Possible == true then
+                                table.insert(AllIDs, ID)
+                                wait()
+                                pcall(function()
+                                -- writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+                                wait()
+                                game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
+                                end)
+                                wait(4)
+                                end
+                                end
+                                end
+                                end
+                                function Teleport()
+                                while wait() do
+                                pcall(function()
+                                TPReturner()
+                                if foundAnything ~= "" then
+                                TPReturner()
+                                end
+                                end)
+                                end
+                                end
+                                Teleport()
+                           end,
+                       })
+
 local OtherSection = OtherTab:CreateSection("Team")
 
 local Button = OtherTab:CreateButton({
@@ -85,13 +390,51 @@ local Button = OtherTab:CreateButton({
    end,
 })
 
+local OtherSection = OtherTab:CreateSection("Misc")
+
+local Slider = OtherTab:CreateSlider({
+    Name = "Walk Speed",
+    Range = {1, 500},
+    Increment = 1,
+    Suffix = "Speed",
+    CurrentValue = 1,
+    Flag = "Slider1", 
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character:SetAttribute("SpeedMultiplier", Value)
+    end,
+ })
+
+ local Slider = OtherTab:CreateSlider({
+    Name = "Dash length",
+    Range = {1, 500},
+    Increment = 1,
+    Suffix = "Length",
+    CurrentValue = 1,
+    Flag = "Slider2", 
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character:SetAttribute("DashLength", Value)
+    end,
+ })
+
+ local Slider = OtherTab:CreateSlider({
+    Name = "Height",
+    Range = {1, 500},
+    Increment = 1,
+    Suffix = "Height",
+    CurrentValue = 1,
+    Flag = "Slider3", 
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+    end,
+ })
+
  local RaidTab = Window:CreateTab("Raid", 4483362458)
  local RaidSection = RaidTab:CreateSection("Raid")
 
  local RaidToggle = RaidTab:CreateToggle({
     Name = "Kill Aura",
     CurrentValue = false,
-    Flag = "Kill Aura", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Flag = "Kill Aura", 
     Callback = function(Value)
         for i,v in pairs(game:GetService("Workspace").Enemies:GetDescendants()) do
             if v.Name == "HumanoidRootPart" then

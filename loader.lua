@@ -1,7 +1,4 @@
-(loadstring or load)(request({
-    Url = "https://hungquan99.xyz/HungHub",
-    Method = "GET",
-    Headers = {
-        ["IsExploit"] = "true"
-    }
-}).Body)()
+if getgenv().AutoExecute == true then
+    Auto_Execute = true
+end
+loadstring(game:HttpGet('https://hungquan99.xyz/Script/HungHub.lua'))()

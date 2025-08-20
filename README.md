@@ -11,5 +11,5 @@ Discord: https://discord.gg/vrHKyBbqmW
 To load Hung Hub, use the following script in your executor:
 
 ```lua
-Auto_Execute = true
+-- Auto_Execute = true
 loadstring(game:HttpGet('https://raw.githubusercontent.com/hungquan99/HungHub/main/loader.lua'))()

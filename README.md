@@ -1,6 +1,7 @@
 # Hung Hub 2.0
 
-![Hung Hub Logo]([https://via.placeholder.com/150?text=LOGO](https://media.discordapp.net/attachments/1351573808255074355/1406911062539899022/turtle_bruh.png?ex=6922bf88&is=69216e08&hm=fd8a9d82d2bf0fcfc2c1bcd366293c29def27c07cf9e5d562e2764210bd4c173&=&format=webp&quality=lossless)
+
+![Hung Hub Logo](https://media.discordapp.net/attachments/1351573808255074355/1406911062539899022/turtle_bruh.png?ex=6922bf88&is=69216e08&hm=fd8a9d82d2bf0fcfc2c1bcd366293c29def27c07cf9e5d562e2764210bd4c173&=&format=webp&quality=lossless)
 
 ![Version](https://img.shields.io/badge/Version-2.0-blue?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)

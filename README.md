@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="https://media.discordapp.net/attachments/1351573808255074355/1407638568888963092/Hung_Hub_Banner.png?ex=6922c213&is=69217093&hm=70d84c8248cfc3f84d51dcbe3aeb84d98558f445471b5da0829bea109efa7d3e&=&format=webp&quality=lossless" alt="Hung Hub Banner">
-</p>
-
-<h1 align="center">🔥 Hung Hub 2.0</h1>
+<h1 align="center">Hung Hub 2.0</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Version-2.0-blue?style=for-the-badge">

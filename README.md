@@ -1,5 +1,3 @@
----
-
 # ⭐ Hung Hub 2.0
 
 Hung Hub 2.0 is a **keyless Roblox script hub** designed for speed, stability, and ease of use.

@@ -2,4 +2,4 @@ if getgenv().AutoExecute == true then
     Auto_Execute = true
 end
 
-loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/c46dad4955446fd8"))()
+loadstring(game:HttpGet("https://vss.pandadevelopment.net/virtual/file/61288747a4264081"))()

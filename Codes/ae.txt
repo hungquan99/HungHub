@@ -1,2 +1,1 @@
-600mvisits
-patch1.0
+700mvisits
